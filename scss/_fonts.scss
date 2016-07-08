@@ -22,7 +22,10 @@
     src: url(../fuentes/BrandonText-Medium.eot);
     src: url(../fuentes/BrandonText-Medium.otf);
 }
-
+@font-face {
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/polar.otf');
+    font-family: 'Polar';
+}
 // @font-face {
 //     font-family: Myriad Pro;
 //     src: url(../fonts/'MyriadPro-Regular.woff2') format('woff2'),
@@ -32,4 +35,24 @@
 //     font-style: normal;
 // }
 
+//-------------------Font-family--------------------//
+
 $century: Century Gothic;
+$brandon: Brandon Text;
+$polar: 'Polar', Helvetica, Arial, sans-serif;
+$openSans: 'Open Sans', Helvetica, Arial, sans-serif;
+
+// ------------------Font-size-----------------------//
+
+$font-xxlarge: 50px;
+$font-xlarge: 42px;
+$font-large: 36px;
+$font-xxmedium: 30px;
+$font-xmedium: 28px;
+
+// --------------------Font-style-----------------------//
+@mixin font($family, $size, $weight) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+}
